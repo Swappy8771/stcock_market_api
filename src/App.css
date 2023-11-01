@@ -17,22 +17,44 @@ h1 {
   margin: 20px 0;
 }
 
-/* Stock chart styles */
+/* StockChart.css */
+
 .stock-chart {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive design */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-
   .stock-chart {
     padding: 10px;
   }
+  
+  .recharts-responsive {
+    font-size: 12px;
+  }
+
+  .recharts-wrapper {
+    overflow: auto; /* Add a horizontal scrollbar if the chart overflows the screen */
+  }
+
+  .recharts-wrapper .recharts-cartesian-axis {
+    font-size: 10px; /* Adjust axis label font size for better mobile readability */
+  }
+
+  .recharts-wrapper .recharts-legend {
+    font-size: 12px; /* Adjust legend font size for better mobile readability */
+  }
+
+  .recharts-wrapper .recharts-tooltip {
+    font-size: 12px; /* Adjust tooltip font size for better mobile readability */
+  }
 }
+
