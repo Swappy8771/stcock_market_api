@@ -17,7 +17,7 @@ h1 {
   margin: 20px 0;
 }
 
-/* StockChart.css */
+
 
 .stock-chart {
   width: 100%;
@@ -36,25 +36,36 @@ h1 {
   .stock-chart {
     padding: 10px;
   }
-  
+
   .recharts-responsive {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .recharts-wrapper {
-    overflow: auto; /* Add a horizontal scrollbar if the chart overflows the screen */
+    overflow: auto;
   }
 
   .recharts-wrapper .recharts-cartesian-axis {
-    font-size: 10px; /* Adjust axis label font size for better mobile readability */
+    font-size: 12px;
   }
 
   .recharts-wrapper .recharts-legend {
-    font-size: 12px; /* Adjust legend font size for better mobile readability */
+    font-size: 14px;
   }
 
   .recharts-wrapper .recharts-tooltip {
-    font-size: 12px; /* Adjust tooltip font size for better mobile readability */
+    font-size: 14px;
+  }
+
+  .recharts-wrapper .recharts-legend-item-text {
+    font-size: 12px;
   }
 }
 
+/* Flexbox Layout */
+@media (max-width: 768px) {
+  .stock-chart {
+    display: flex;
+    flex-direction: column;
+  }
+}
